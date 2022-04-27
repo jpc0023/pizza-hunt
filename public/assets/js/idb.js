@@ -24,7 +24,7 @@ request.onerror = function(event){
 };
 
 function saveRecord(record) {
-    const transaction = dc.transaction(['new_pizza'], 'readwrite');
+    const transaction = db.transaction(['new_pizza'], 'readwrite');
 
     const pizzaObjectStore = transaction.objectStore('new_pizza');
 
